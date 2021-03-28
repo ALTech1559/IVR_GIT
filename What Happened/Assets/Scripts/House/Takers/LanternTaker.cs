@@ -24,4 +24,9 @@ public class LanternTaker : MonoBehaviour, IPointerClickHandler, TakerInterface
         PlayerPrefsMechanic.ChangeValuse("Lantern", 1);
         Destroy(this.gameObject);
     }
+
+    public void CangeMaterial()
+    {
+
+    }
 }
