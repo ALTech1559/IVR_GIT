@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 20002, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 158
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 47
+  controlID: 159
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 462, y: 271}
   m_MaxSize: {x: 20002, y: 10021}
   vertical: 0
-  controlID: 115
+  controlID: 75
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1130,11 +1130,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 941
-      height: 655
+      height: 634
     m_Scale: {x: 0.49010417, y: 0.49010417}
-    m_Translation: {x: 470.5, y: 327.5}
+    m_Translation: {x: 470.5, y: 317}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1142,9 +1142,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -668.2253
+      y: -646.8013
       width: 1920
-      height: 1336.4506
+      height: 1293.6025
     m_MinimalGUI: 1
   m_defaultScale: 0.49010417
   m_LastWindowPixelSize: {x: 941, y: 655}
@@ -1189,9 +1189,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9472656, y: -1.1591187, z: 93.8125}
+    m_Target: {x: 154.64453, y: 14.40564, z: 86.65625}
     speed: 2
-    m_Value: {x: 0.9472656, y: -1.1591187, z: 93.8125}
+    m_Value: {x: 154.64453, y: 14.40564, z: 86.65625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1239,11 +1239,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.0038959521, y: 0.03149427, z: -0.000121942765, w: 0.9994986}
     speed: 2
-    m_Value: {x: -0.0038959521, y: -0.03149427, z: 0.000121942765, w: -0.9994986}
+    m_Value: {x: 0.0038959433, y: 0.0314942, z: -0.00012194249, w: 0.99949634}
   m_Size:
-    m_Target: 47.485214
+    m_Target: 120.85383
     speed: 2
-    m_Value: 47.485214
+    m_Value: 115.6496
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1323,9 +1323,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 243d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: e4d1fffffed1ffff34dcffff38dcffff58efffff22f6ffffcef8ffff44fbffff
+      m_ExpandedIDs: 06f9ffff44fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1478,20 +1478,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 51
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: 51
   m_LastProjectPath: D:\Desktop\IVR_GIT\What Happened
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: 743a0000
-    m_LastClickedID: 14964
-    m_ExpandedIDs: 00000000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000
+    scrollPos: {x: 0, y: 458}
+    m_SelectedIDs: de3a0000
+    m_LastClickedID: 15070
+    m_ExpandedIDs: 00000000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000de3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1687,7 +1687,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.11406065, y: 0.0020836517, z: -0.00023919783, w: -0.99347156}
     speed: 2
-    m_Value: {x: -0.114060655, y: 0.0020836517, z: -0.00023919785, w: -0.9934716}
+    m_Value: {x: -0.11406065, y: 0.0020836517, z: -0.00023919783, w: -0.99347156}
   m_Size:
     m_Target: 40.40804
     speed: 2
@@ -1902,19 +1902,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/GameObjects
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Prefabs/GameObjects
+  - Assets
   m_LastFoldersGridSize: 57
   m_LastProjectPath: D:\Desktop\IVR_GIT\What Happened
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 346}
-    m_SelectedIDs: 683a0000
-    m_LastClickedID: 14952
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 603a0000
+    m_LastClickedID: 14944
     m_ExpandedIDs: 00000000603a0000623a0000643a0000663a0000683a00006a3a00006c3a00006e3a0000703a0000723a0000743a0000763a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: f8460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1995,7 +1995,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 76}
     m_GridSize: 57
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 199
