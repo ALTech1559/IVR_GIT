@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoading : MonoBehaviour
 {
-    private bool statement = false;
+    internal static bool statement = false;
     private Animator animator;
     private static SceneLoading sceneLoading;
     private AsyncOperation asyncLoadingScene;
@@ -14,7 +14,6 @@ public class SceneLoading : MonoBehaviour
     
     private void Start()
     {
-
         animator = GetComponent<Animator>();
         sceneLoading = this;
         if (openScene)
@@ -26,18 +25,19 @@ public class SceneLoading : MonoBehaviour
 
     internal static void ChangeScene(string sceneName)
     {
-        if (!sceneLoading.statement)
+        if (!statement)
         {
             sceneLoading.animator.SetTrigger("sceneClosing");
             sceneLoading.asyncLoadingScene = SceneManager.LoadSceneAsync(sceneName);
             sceneLoading.asyncLoadingScene.allowSceneActivation = false;
             sceneLoading.Invoke("OnAniamtionOver", sceneLoading.animationLength);
-            sceneLoading.statement = true;
+            statement = true;
         }
     }
 
     private void OnAniamtionOver()
     {
+        statement = false;
         openScene = true;
         asyncLoadingScene.allowSceneActivation = true;
     }

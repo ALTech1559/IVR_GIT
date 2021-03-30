@@ -30,7 +30,6 @@ public class LastMiniGameController : MonoBehaviour
             animator.SetTrigger("Jump");
             on_ground = false;
         }
-
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -54,7 +53,11 @@ public class LastMiniGameController : MonoBehaviour
         {
             failSound.Play();
             animator.Play("FallDown");
-            Invoke("ReloadScene", 1);
+            if (!SceneLoading.statement)
+            {
+                Invoke("ReloadScene", 1);
+            }
+
         }
     }
 
