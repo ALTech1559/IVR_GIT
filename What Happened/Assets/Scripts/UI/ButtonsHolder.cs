@@ -16,6 +16,7 @@ public class ButtonsHolder : MonoBehaviour
 	[SerializeField] private GameObject ErrorTermux;
 	[SerializeField] private GameObject PasswordPanel;
 	[SerializeField] private GameObject LightControllerPaswwrodPanel;
+	[SerializeField] private GameObject PurchasePanel;
 
 	[Header("Others")]
 	[SerializeField] private InputField PhoneInput;
@@ -80,7 +81,7 @@ public class ButtonsHolder : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("No video rendered");
+			PurchasePanel.SetActive(true);
 		}
 	}
 

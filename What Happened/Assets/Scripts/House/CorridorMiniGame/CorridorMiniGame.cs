@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class CorridorMiniGame : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject MiniGame;
+    [SerializeField] private GameObject ButtonOnTheSecondFloor;
     [SerializeField] private CorridorKey Key;
     internal static event UnityAction _changeStateOfMiniGame;
     internal static event UnityAction _joystickChangeStatement;
@@ -37,6 +38,7 @@ public class CorridorMiniGame : MonoBehaviour, IPointerClickHandler
         _changeStateOfMiniGame?.Invoke();
         yield return new WaitForSeconds(0.55f);
         MiniGame.SetActive(true);
+        ButtonOnTheSecondFloor.SetActive(false);
         _boxConllider.enabled = true;
     }
 
@@ -46,6 +48,7 @@ public class CorridorMiniGame : MonoBehaviour, IPointerClickHandler
         yield return new WaitForSeconds(0.55f);
         PlayerPrefs.SetInt("CorridorGame", 1);
         _joystickChangeStatement?.Invoke();
+        ButtonOnTheSecondFloor.SetActive(true);
         MiniGame.SetActive(false);
         _boxConllider.enabled = false;
     }
