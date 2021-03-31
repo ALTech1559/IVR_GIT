@@ -13,7 +13,15 @@ public class ButtonsHolderUI : MonoBehaviour
         {
             PlayerPrefs.DeleteAll();
         }
-        SceneLoading.ChangeScene("House");
+        if (PlayerPrefs.GetInt("OnTheStreet") == 1)
+        {
+            SceneManager.LoadScene("Street");
+        }
+        else
+        {
+            SceneLoading.ChangeScene("House");
+        }
+
     }
 
     public void NewGame()

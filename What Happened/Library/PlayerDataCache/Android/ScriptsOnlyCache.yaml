@@ -88,6 +88,11 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.Editor.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
+    UnityEngine.Monetization.Editor.dll:
+    - UnityEngine.Monetization.Placeholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -364,7 +369,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 14524}
+      Script: {instanceID: 15430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -537,8 +542,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 72
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -556,19 +559,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11382}
-    - Class: 114
       Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11522}
     - Class: 114
       Script: {instanceID: 11616}
     - Class: 114
       Script: {instanceID: 11660}
     - Class: 114
       Script: {instanceID: 11678}
-    - Class: 114
-      Script: {instanceID: 11794}
     - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
@@ -588,8 +585,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12490}
-    - Class: 114
       Script: {instanceID: 12640}
     - Class: 114
       Script: {instanceID: 12864}
@@ -603,8 +598,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13204}
     - Class: 114
       Script: {instanceID: 13240}
-    - Class: 114
-      Script: {instanceID: 13546}
     - Class: 114
       Script: {instanceID: 13678}
     - Class: 114
@@ -705,7 +698,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 14524}
+      Script: {instanceID: 15430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
