@@ -65,9 +65,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.LensDistortion
     - UnityEngine.Rendering.PostProcessing.MotionBlur
     - UnityEngine.Rendering.PostProcessing.PostProcessLayer
-    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
-    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
     - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
     - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.Rider.Editor.dll:
@@ -88,11 +86,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.Editor.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
-    UnityEngine.Monetization.Editor.dll:
-    - UnityEngine.Monetization.Placeholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -164,8 +157,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11522}
-    - Class: 114
       Script: {instanceID: 11616}
     - Class: 114
       Script: {instanceID: 11660}
@@ -177,8 +168,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11758}
     - Class: 114
       Script: {instanceID: 11772}
-    - Class: 114
-      Script: {instanceID: 11794}
     - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
@@ -250,8 +239,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13546}
-    - Class: 114
       Script: {instanceID: 13678}
     - Class: 114
       Script: {instanceID: 13686}
@@ -260,6 +247,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 122
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -369,7 +358,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 15430}
+      Script: {instanceID: 32032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -698,7 +687,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 15430}
+      Script: {instanceID: 32032}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
