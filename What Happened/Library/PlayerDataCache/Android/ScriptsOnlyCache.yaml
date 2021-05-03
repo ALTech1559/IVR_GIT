@@ -54,20 +54,6 @@ ScriptsOnlyBuild:
     - TreeSpawn
     - VacumeMachine
     - WalllsControll
-    Unity.Postprocessing.Runtime.dll:
-    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
-    - UnityEngine.Rendering.PostProcessing.AutoExposure
-    - UnityEngine.Rendering.PostProcessing.Bloom
-    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
-    - UnityEngine.Rendering.PostProcessing.ColorGrading
-    - UnityEngine.Rendering.PostProcessing.DepthOfField
-    - UnityEngine.Rendering.PostProcessing.Grain
-    - UnityEngine.Rendering.PostProcessing.LensDistortion
-    - UnityEngine.Rendering.PostProcessing.MotionBlur
-    - UnityEngine.Rendering.PostProcessing.PostProcessLayer
-    - UnityEngine.Rendering.PostProcessing.PostProcessResources
-    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
-    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -86,6 +72,11 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.Editor.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
+    UnityEngine.Monetization.Editor.dll:
+    - UnityEngine.Monetization.Placeholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -126,8 +117,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 72
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -146,8 +135,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11382}
     - Class: 114
       Script: {instanceID: 11402}
     - Class: 114
@@ -196,8 +183,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12366}
     - Class: 114
       Script: {instanceID: 12468}
-    - Class: 114
-      Script: {instanceID: 12490}
     - Class: 114
       Script: {instanceID: 12492}
     - Class: 114
@@ -358,7 +343,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 32032}
+      Script: {instanceID: 59570}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -687,7 +672,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 32032}
+      Script: {instanceID: 59570}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
