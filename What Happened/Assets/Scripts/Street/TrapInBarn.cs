@@ -30,6 +30,8 @@ public class TrapInBarn : MonoBehaviour, IPointerClickHandler
         yield return new WaitForSeconds(10);
         yield return new WaitUntil(() => Vector3.Distance(_player.transform.position, gameObject.transform.position) > 10);
         _final_speech.SetActive(true);
+        yield return new WaitForSeconds(5);
+        PlayerPrefs.SetInt("LastGame", 1);
         SceneLoading.ChangeScene("LastMiniGame");
     }
 }

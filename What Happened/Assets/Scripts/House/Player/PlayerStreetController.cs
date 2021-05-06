@@ -73,7 +73,7 @@ public class PlayerStreetController : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(direct);
         }
 
-        _charterController.Move(_moveVector * Time.deltaTime);
+        _charterController.Move(_moveVector * Time.fixedDeltaTime);
     }
 
 }
