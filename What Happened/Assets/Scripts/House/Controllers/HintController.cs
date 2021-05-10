@@ -10,16 +10,22 @@ public class HintController : MonoBehaviour
     [SerializeField] private AudioSource hintSound;
     internal void PlayHint()
     {
+        //start playing sound
         hintSound.Play();
+        //initialize animator
         _animator = GetComponent<Animator>();
+        //start destriying coroutine 
         StartCoroutine(DestroyMyself());
     }
 
     private IEnumerator DestroyMyself()
     {
+        //wait for life time
         yield return new WaitForSeconds(lifeTime);
+        //start animation
         _animator.Play(animation);
         yield return new WaitForSeconds(1);
+        //switch off the game object
         gameObject.SetActive(false);
     }
 }

@@ -10,8 +10,10 @@ public class BookController : MonoBehaviour, ControllerInterface
 
     private void OnEnable()
     {
+        //initialization of components
         Panel = transform.GetChild(0).gameObject;
         _animator = Panel.GetComponent<Animator>();
+        //subscribe on events
         ButtonsHolder.changeBookStatement += ChangeStatement;
     }
 
@@ -22,7 +24,9 @@ public class BookController : MonoBehaviour, ControllerInterface
 
     public void ChangeStatement()
     {
+        //change statement
         statement = !statement;
+        //start coroutine of animation
         StartCoroutine(SwitchOffPhone());
     }
 
@@ -30,10 +34,12 @@ public class BookController : MonoBehaviour, ControllerInterface
     {
         if(!statement)
         {
+            //start animation
             _animator.Play("Sleep");
+            //wait for time
             yield return new WaitForSeconds(1f);
         }
+        //switch off the pone panel
         Panel.SetActive(statement);
     }
-
 }

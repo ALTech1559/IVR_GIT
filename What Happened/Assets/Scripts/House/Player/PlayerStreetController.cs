@@ -26,6 +26,7 @@ public class PlayerStreetController : MonoBehaviour
 
     void Start()
     {
+        //initialization of components
         _charterController = GetComponent<CharacterController>();
         _joystick = Joistick.GetComponent<StreetJoistick>();
         _animator = GetComponent<Animator>();
@@ -33,7 +34,9 @@ public class PlayerStreetController : MonoBehaviour
 
     void Update()
     {
+        //playermoving by joystick
         CharterMove();
+        //panel activation if player in special zone
         if (transform.position.x < 4.67f && transform.position.z < -31 && PlayerPrefs.GetInt("Trap") != 1)
         {
             if (_helpIsShown == false)
@@ -47,9 +50,10 @@ public class PlayerStreetController : MonoBehaviour
     }
     private void CharterMove()
     {
-
+        //initialization of moving vector
         _moveVector.z = _joystick.Vertical() * _speedMove;
         _moveVector.x = _joystick.Horizontal() * _speedMove;
+        //start animation
         if (_moveVector.z != 0 && _moveVector.x != 0)
         {
             if (!stepSound.isPlaying)
@@ -65,14 +69,14 @@ public class PlayerStreetController : MonoBehaviour
             _animator.SetBool("isRunning", false);
             Particals.Stop();
         }
-
+        //give rotation to player
         if (Vector3.Angle(Vector3.forward, _moveVector) > 0 || Vector3.Angle(Vector3.forward, _moveVector) == 0.0f)
         {
             Vector3 direct = Vector3.RotateTowards(transform.forward, -_moveVector, _speedMove * 100, 0f);
 
             transform.rotation = Quaternion.LookRotation(direct);
         }
-
+        //player move
         _charterController.Move(_moveVector * Time.fixedDeltaTime);
     }
 

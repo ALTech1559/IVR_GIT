@@ -12,7 +12,7 @@ public class SceneLoading : MonoBehaviour
     [SerializeField] private static bool openScene = true;
     [SerializeField] private float animationLength;
     
-    private void Start()
+    private void Start() //инициализация объектов
     {
         animator = GetComponent<Animator>();
         sceneLoading = this;
@@ -25,7 +25,7 @@ public class SceneLoading : MonoBehaviour
 
     internal static void ChangeScene(string sceneName)
     {
-        if (!statement)
+        if (!statement) // если не идет загрузка сцены, начинаю загрузку новой
         {
             sceneLoading.animator.SetTrigger("sceneClosing");
             sceneLoading.asyncLoadingScene = SceneManager.LoadSceneAsync(sceneName);
@@ -35,7 +35,7 @@ public class SceneLoading : MonoBehaviour
         }
     }
 
-    private void OnAniamtionOver()
+    private void OnAniamtionOver() // завершение загрузки сцены
     {
         statement = false;
         openScene = true;

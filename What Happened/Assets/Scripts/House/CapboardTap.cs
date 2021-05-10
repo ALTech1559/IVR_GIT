@@ -6,9 +6,9 @@ using UnityEngine.EventSystems;
 
 public class CapboardTap : MonoBehaviour, IPointerClickHandler
 {
-    public static event UnityAction _onClick;
+    public static event UnityAction _onClick; //actionof click
     public void OnPointerClick(PointerEventData eventData)
     {
-        _onClick.Invoke();
+        _onClick.Invoke(); // activate event
     }
 }

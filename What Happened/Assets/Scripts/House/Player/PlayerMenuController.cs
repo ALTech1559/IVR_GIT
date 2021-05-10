@@ -7,6 +7,6 @@ public class PlayerMenuController : MonoBehaviour
     [SerializeField] private float speed;
     void Update()
     {
-        transform.Translate(Vector3.right * speed);
+        transform.Translate(Vector3.right * speed); // move person
     }
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface TakerInterface
 {
-    void OnClickEvent();
+    void OnClickEvent(); // OnClick function
 }

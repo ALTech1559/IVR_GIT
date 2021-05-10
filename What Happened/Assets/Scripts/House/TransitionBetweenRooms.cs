@@ -6,11 +6,11 @@ public class TransitionBetweenRooms : MonoBehaviour
 {
     private Animator animator;
 
-    private void Start()
+    private void Start() 
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>(); // initialize animator component
     }
-    private void OnEnable()
+    private void OnEnable() // subscribe on events
     {
         CorridorMiniGame._changeStateOfMiniGame += Animation;
         RoomsData.changeStateOfMiniGame += Animation;
@@ -28,6 +28,6 @@ public class TransitionBetweenRooms : MonoBehaviour
 
     private void Animation()
     {
-        animator.SetTrigger("Transition");
+        animator.SetTrigger("Transition");  // set animation trigger
     }
 }

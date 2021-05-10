@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private bool _way;
 
-    private void Start()
+    private void Start() // initialization of components
     {
         J.rectTransform.anchoredPosition = new Vector3 (0,0,0);
         _rigidbody = GetComponent<Rigidbody>();
@@ -46,11 +46,12 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerMovement()
     {
-        if (Joystick.activeInHierarchy == false)
+        if (Joystick.activeInHierarchy == false) // if player is not moving
         {
             _moveSpeed = 0f;
         }
-
+        //<summary>
+        // if player is moving right or left
         if (J.rectTransform.anchoredPosition.x < 0)
         {
             _way = false;
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
             _way = true;
             _moveSpeed = _speed;
         }
-
+        //</summary>
 
         if (J.rectTransform.anchoredPosition.x == 0)
         {
@@ -78,10 +79,12 @@ public class PlayerController : MonoBehaviour
             }
             _animator.SetBool("isRunning", true);
         }
-
+        //<summary>
+        // activation of different eyes
         LeftLantern.SetActive(!Light.lightInHouse && !_way);
         RightLantern.SetActive(!Light.lightInHouse && _way);
         EyesLookingRight.SetActive(_way);
+        //</summary>
 
         _rigidbody.velocity = new Vector2(_moveSpeed, _speed);
     }
@@ -92,7 +95,7 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetFloat("lastPositionY", transform.position.y);
     }
 
-    private void OnEnable()
+    private void OnEnable() // subscribe on events
     {
         ButtonsHolder.goOnTheSecondFloor += GoOnTheSecondFloor;
         ButtonsHolder.goOnTheFirstFloor += GoOnTheFirstFloor;
@@ -103,25 +106,25 @@ public class PlayerController : MonoBehaviour
         ButtonsHolder.goOnTheSecondFloor -= GoOnTheSecondFloor;
         ButtonsHolder.goOnTheFirstFloor -= GoOnTheFirstFloor;
     }
-
+    //<summary>
+    //change floor
     private void GoOnTheSecondFloor()
     {
         isGoingOnTheNextFloor = true;
         StartCoroutine(TransitionRoom("stair2", 36.86f));
-
     }
 
     private void GoOnTheFirstFloor()
     {
         isGoingOnTheNextFloor = true;
         StartCoroutine(TransitionRoom("stair1", -10.83f));
-
     }
+    //</summary>
 
     private IEnumerator TransitionRoom(string roomName, float positionY)
     {
-        data.GetComponent<RoomsData>().Movement(roomName, isGoingOnTheNextFloor );
-        yield return new WaitForSeconds(0.65f);
+        data.GetComponent<RoomsData>().Movement(roomName, isGoingOnTheNextFloor ); // move player is scene
+        yield return new WaitForSeconds(0.65f);// wait for time
         transform.position = new Vector3(transform.position.x, positionY, transform.position.z);
         isGoingOnTheNextFloor = false;
     }
